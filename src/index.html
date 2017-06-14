@@ -1,10 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>РАСПРОДАЖА - покупки с выгодой</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>РАСПРОДАЖА - покупки с выгодой</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    here it begins!
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!--                                                              -->
+  <!--                        PAGE HEADER                           -->
+  <!--                                                              -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <header class="page-header">
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <img src="img/logo.png" alt="Распродажа" width="40" height="66">
+          <span class="logo__title">
+            Распродажа
+          </span>
+          <span class="logo__description">
+            Покупки с выгодой
+          </span>
+        </a>
+      </div>
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            Акции
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            Товары со скидкой
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            Бренды
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            Шоппинг
+          </a>
+        </li>
+      </ul>
+      <div class="search">
+        <form action="/echo" method="post">
+          <input class="search__input" id="search1" type="search" name="search" placeholder="Введите название бренда, товара ...">
+          <input class="search__submit" type="submit" value="">
+        </form>
+      </div>
+      <a class="navbar__btn" href="">
+        Мои скидки
+      </a>
+      <button class="navbar__current-location">
+        Москва
+      </button>
+    </nav>
+    <nav class="navbar">
+      <ul class="alt-menu">
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Одежда и обувь
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Детям и мамам
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Спорт и фитнес
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Техника и электроника
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Дом и сад
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Путешествия и туризм
+          </a>
+        </li>
+        <li class="alt-menu__item">
+          <a class="alt-menu__link" href="#">
+            Досуг и развлечения
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="jumbotron">
+      <span class="jumbotron__text">
+        Лучшие распродажи, скидки и купоны на товары в Москве
+      </span>
+      <div class="search">
+        <form action="/echo" method="post">
+          <input class="search__input" id="search2" type="search" name="search" placeholder="Введите название бренда, товара ...">
+          <input class="search__submit" type="submit" value="Поиск">
+        </form>
+      </div>
+    </div>
+  </header>
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!--                                                              -->
+  <!--                          FEATURES                            -->
+  <!--                                                              -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <div class="features">
+    <h2 class="features__title">
+      Почему мы лучшие
+    </h2>
+    <button class="features__wrap"></button>
+    <ul class="features__list">
+      <li class="feature feature--1">
+        <h3 class="feature__title">
+          Максимальная выгода
+        </h3>
+        <p class="feature__description">
+          Мы собираем все самые выгодные предложения и скидки в одном месте специально для вас
+        </p>
+      </li>
+      <li class="feature feature--2">
+        <h3 class="feature__title">
+          Удобный инструмент
+        </h3>
+        <p class="feature__description">
+          Удобный инструмент позволит найти нужное предложение в считаные секунды
+        </p>
+      </li>
+      <li class="feature feature--3">
+        <h3 class="feature__title">
+          Будь первым
+        </h3>
+        <p class="feature__description">
+          Гибкая настройка подписки позволяет экономить время и быть в курсе самых новых и выгодных предложений
+        </p>
+      </li>
+    </ul>
+  </div>
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!--                                                              -->
+  <!--                       SECTION BRANDS                         -->
+  <!--                                                              -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <section class="catalog">
+    <h2 class="catalog__title">
+      Лучшие бренды
+    </h2>
+    <ul class="catalog__list">
+      <li class="catalog-item">
+        <a class="catalog-item__img-link" href="#">
+          <img src="img/brand-ecco.png" alt="Ecco" width="150" height="40">
+        </a>
+      </li>
+    </ul>
+    <a class="catalog__btn" href="#">
+      показать еще
+    </a> <!-- ссылка на страницу брендов -->
+  </section>
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!--                                                              -->
+  <!--                       SECTION ACTIONS                        -->
+  <!--                                                              -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <section class="catalog">
+    <h2 class="catalog__title">
+      Популярные акции
+    </h2>
+    <ul class="catalog__list">
+      <li class="catalog-item">
+        <div class="catalog-item__header">
+          <a class="catalog-item__img-link" href="#">
+            <img src="img/brand-ecco.png" alt="Ecco" width="150" height="40">
+          </a>
+        </div>
+        <div class="catalog-item__body">
+          <p class="catalog-item__description">
+            Скидка 15% при покупке от 1000 рублей
+          </p>
+        </div>
+        <div class="catalog-item__footer">
+          <div class="catalog-item__likes">
+            <button class="catalog-item__like-it"></button>
+            <span class="likes-count">
+              30
+            </span>
+          </div>
+          <a class="catalog-item__btn" href="#">
+            подробнее
+          </a>
+        </div>
+        <div class="catalog-item__sticker">
+          -15%
+        </div>
+      </li>
+    </ul>
+    <a class="catalog__btn" href="#">
+      показать еще
+    </a> <!-- ссылка на страницу акций -->
+  </section>
 </body>
 </html>
