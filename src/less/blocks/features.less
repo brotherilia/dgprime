@@ -1,15 +1,26 @@
 .features {
-  .container();
+  .container-wide();
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  font-weight: bold;
 
   &__title {
     .reset-block();
     margin-bottom: 15px;
     text-align: center;
-
+    font-size: 30px;
   }
 
   &__wrap {
-    display: none; //FIXME
+    .reset-btn();
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #b3b3b3;
+    border-left: 3px solid #b3b3b3;
+    transform: rotate(45deg);
   }
 
   &__list {

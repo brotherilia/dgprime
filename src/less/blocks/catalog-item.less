@@ -1,3 +1,124 @@
 .catalog-item {
+  position: relative;
+  width: 283px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 20px;
 
+  &__sticker {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #f53131;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 55px;
+    z-index: 1;
+  }
+
+  &--brand {
+    height: 125px;
+    position: relative;
+  }
+
+  &__header {
+    height: 213px;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+
+    &--ecco {
+      background: url("../img/bg-ecco.jpg") no-repeat top;
+    }
+
+    &--lamoda {
+      background: url("../img/bg-lamoda.jpg") no-repeat top;
+    }
+
+    &--sodamag {
+      background: url("../img/bg-sodamag.jpg") no-repeat top;
+    }
+
+    &--bershka {
+      background: url("../img/bg-bershka.jpg") no-repeat top;
+    }
+
+    &--rringer {
+      background: url("../img/bg-rringer.jpg") no-repeat top;
+    }
+
+    &--mvideo {
+      background: url("../img/bg-mvideo.jpg") no-repeat top;
+    }
+  }
+
+  &__logo-box {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px 0 #777777;
+
+    & img {
+      width: 85%;
+    }
+  }
+
+  &__body {
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  &__description {
+    line-height: 24px;
+  }
+
+  &__footer {
+    display: flex;
+    height: 50px;
+  }
+
+  &__likes {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-right: 1px solid #f2f2f2;
+    text-align: center;
+  }
+
+  &__like-it {
+    .reset-btn();
+    width: 50px;
+    height: 50px;
+    background: url("../img/icon-like.png") no-repeat 50%;
+  }
+
+  &__likes-count{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  &__btn {
+    .btn-common();
+    width: 50%;
+    font-size: 14px;
+    color: #f53131;
+  }
+
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
