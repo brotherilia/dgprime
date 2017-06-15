@@ -18,15 +18,22 @@
 }
 
 .container() {
-  //outline: 1px solid blue;
   margin: 0 auto;
   width: 1245px;
+
+  @media @tablet-widths {
+    width: 920px;
+  }
+
+  @media @mobile-widths {
+    min-width: 320px;
+    max-width: 920px;
+  }
 }
 
 .container-wide() {
-  //outline: 1px solid blue;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 .pseudo-common() {

@@ -1,3 +1,44 @@
 .navbar {
+  .container();
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 82px;
 
+  &__discounts {
+    .btn-common();
+    width: 166px;
+    height: 40px;
+    text-align: left;
+    padding-left: 50px;
+    line-height: 40px;
+    background-color: #f53131;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    background: url("../img/icon-personal.png") no-repeat 20px;
+  }
+
+  &__current-location {
+    .reset-btn();
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+
+    &::after {
+      .pseudo-common();
+      transform: rotate(-45deg);
+      top: 0;
+      right: -12px;
+      width: 7px;
+      height: 7px;
+      border-bottom: 1px solid #808080;
+      border-right: 1px solid #808080;
+      transform: rotate(45deg);
+    }
+  }
 }

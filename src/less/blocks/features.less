@@ -1,8 +1,13 @@
 .features {
   .container-wide();
-  position: relative;
+  padding-top: 50px;
   border-bottom: 1px solid #ededed;
   font-weight: bold;
+
+  &__wrapper {
+    position: relative;
+    .container();
+  }
 
   &__title {
     .reset-block();
@@ -14,12 +19,12 @@
   &__wrap {
     .reset-btn();
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
-    width: 15px;
-    height: 15px;
-    border-top: 3px solid #b3b3b3;
-    border-left: 3px solid #b3b3b3;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #b3b3b3;
+    border-left: 2px solid #b3b3b3;
     transform: rotate(45deg);
   }
 

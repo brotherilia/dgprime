@@ -2,12 +2,20 @@
   .container();
   padding-right: 53px;
 
+  @media @tablet-widths {
+    padding-right: 0;
+  }
+
   &__title {
     .reset-block();
     padding-top: 40px;
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: bold;
+
+    @media @tablet-widths {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -15,6 +23,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media @tablet-widths {
+      justify-content: space-around;
+    }
   }
 
   &__btn {

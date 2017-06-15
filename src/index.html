@@ -16,7 +16,6 @@
     <nav class="navbar">
       <div class="logo">
         <a class="logo__link" href="index.html">
-          <img src="img/logo.png" alt="Распродажа" width="40" height="66">
           <span class="logo__title">
             Распродажа
           </span>
@@ -27,7 +26,7 @@
       </div>
       <ul class="main-menu">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="main-menu__link main-menu__link--active">
             Акции
           </a>
         </li>
@@ -47,68 +46,75 @@
           </a>
         </li>
       </ul>
-      <div class="search">
-        <form action="/echo" method="post">
+      <form action="/echo" method="post">
+        <div class="search">
           <input class="search__input" id="search1" type="search" name="search" placeholder="Введите название бренда, товара ...">
           <input class="search__submit" type="submit" value="">
-        </form>
-      </div>
-      <a class="navbar__btn" href="">
+        </div>
+      </form>
+      <a class="navbar__discounts" href="">
         Мои скидки
       </a>
       <button class="navbar__current-location">
         Москва
       </button>
     </nav>
-    <nav class="navbar">
-      <ul class="alt-menu">
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Одежда и обувь
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Детям и мамам
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Спорт и фитнес
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Техника и электроника
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Дом и сад
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Путешествия и туризм
-          </a>
-        </li>
-        <li class="alt-menu__item">
-          <a class="alt-menu__link" href="#">
-            Досуг и развлечения
-          </a>
-        </li>
-      </ul>
+    <nav class="alt-menu">
+      <div class="alt-menu__wrapper">
+        <ul class="alt-menu__list">
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Одежда и обувь
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Детям и мамам
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Спорт и фитнес
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Техника и электроника
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Дом и сад
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Путешествия и туризм
+            </a>
+          </li>
+          <li class="alt-menu__item">
+            <a class="alt-menu__link" href="#">
+              Досуг и развлечения
+            </a>
+          </li>
+        </ul>
+        <button class="alt-menu__expand">
+          Ещё
+        </button>
+      </div>
     </nav>
     <div class="jumbotron">
-      <span class="jumbotron__text">
-        Лучшие распродажи, скидки и купоны на товары в Москве
-      </span>
-      <div class="search">
-        <form action="/echo" method="post">
-          <input class="search__input" id="search2" type="search" name="search" placeholder="Введите название бренда, товара ...">
-          <input class="search__submit" type="submit" value="Поиск">
-        </form>
+      <div class="jumbotron__slogan">
+        <span class="jumbotron__slogan-text">
+          Лучшие распродажи, скидки и купоны на товары в Москве
+        </span>
       </div>
+      <form action="/echo" method="post">
+        <div class="search search--centered">
+          <input class="search__input search__input--big" id="search2" type="search" name="search" placeholder="Введите название бренда, товара ...">
+          <input class="search__submit search__submit--big" type="submit" value="Поиск">
+        </div>
+      </form>
     </div>
   </header>
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -117,36 +123,38 @@
   <!--                                                              -->
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
   <div class="features">
-    <h2 class="features__title">
-      Почему мы лучшие
-    </h2>
-    <button class="features__wrap"></button>
-    <ul class="features__list">
-      <li class="feature feature--1">
-        <h3 class="feature__title">
-          Максимальная выгода
-        </h3>
-        <p class="feature__description">
-          Мы собираем все самые выгодные предложения и скидки в одном месте специально для вас
-        </p>
-      </li>
-      <li class="feature feature--2">
-        <h3 class="feature__title">
-          Удобный инструмент
-        </h3>
-        <p class="feature__description">
-          Удобный инструмент позволит найти нужное предложение в считаные секунды
-        </p>
-      </li>
-      <li class="feature feature--3">
-        <h3 class="feature__title">
-          Будь первым
-        </h3>
-        <p class="feature__description">
-          Гибкая настройка подписки позволяет экономить время и быть в курсе самых новых и выгодных предложений
-        </p>
-      </li>
-    </ul>
+    <div class="features__wrapper">
+      <h2 class="features__title">
+        Почему мы лучшие
+      </h2>
+      <button class="features__wrap"></button>
+      <ul class="features__list">
+        <li class="feature feature--1">
+          <h3 class="feature__title">
+            Максимальная выгода
+          </h3>
+          <p class="feature__description">
+            Мы собираем все самые выгодные предложения и скидки в одном месте специально для вас
+          </p>
+        </li>
+        <li class="feature feature--2">
+          <h3 class="feature__title">
+            Удобный инструмент
+          </h3>
+          <p class="feature__description">
+            Удобный инструмент позволит найти нужное предложение в считаные секунды
+          </p>
+        </li>
+        <li class="feature feature--3">
+          <h3 class="feature__title">
+            Будь первым
+          </h3>
+          <p class="feature__description">
+            Гибкая настройка подписки позволяет экономить время и быть в курсе самых новых и выгодных предложений
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
   <!--                                                              -->
@@ -273,7 +281,7 @@
       </li>
       <li class="catalog-item">
         <div class="catalog-item__sticker">
-          1000&#8381
+          1000&#8381;
         </div>
         <div class="catalog-item__header catalog-item__header--sodamag">
           <div class="catalog-item__logo-box">
@@ -389,7 +397,7 @@
       </li>
       <li class="catalog-item">
         <div class="catalog-item__sticker">
-          1000&#8381
+          1000&#8381;
         </div>
         <div class="catalog-item__header catalog-item__header--mvideo">
           <div class="catalog-item__logo-box">
