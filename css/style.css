@@ -473,7 +473,7 @@ p {
 }
 .page-header {
   max-width: 1440px;
-  height: 550px;
+  max-height: 550px;
   margin: 0 auto;
   padding-top: 8px;
 }
@@ -815,7 +815,7 @@ p {
 }
 .features__wrap {
   position: absolute;
-  top: 50px;
+  top: 0;
   right: 0;
 
   width: 10px;
@@ -1120,7 +1120,12 @@ p {
     padding: 0 10px;
   }
   .navbar__discounts {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+
     width: 40px;
+    height: 40px;
     padding-left: 0;
 
     text-indent: -5000px;
@@ -1136,10 +1141,11 @@ p {
     right: 60px;
 
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 
-    background: linear-gradient(to top, #000000 0%, #000000 20%, transparent 20%, transparent 40%, #000000 40%, #000000 60%, transparent 60%, transparent 80%, #000000 80%, #000000 100%);
+    background: linear-gradient(to top, #f53131 0%, #f53131 20%, transparent 20%, transparent 40%, #f53131 40%, #f53131 60%, transparent 60%, transparent 80%, #f53131 80%, #f53131 100%);
+    border-radius: 3px;
   }
   .navbar__menu-toggle-checkbox:checked ~ .main-menu {
     display: block;
@@ -1150,7 +1156,7 @@ p {
   }
   .main-menu {
     position: absolute;
-    top: 20px;
+    top: 70px;
     left: 50%;
     z-index: 1;
 
@@ -1200,6 +1206,7 @@ p {
     display: block;
   }
   .jumbotron {
+    height: 250px;
     padding-top: 100px;
 
     background: url("../img/bg-header-mobile.jpg") no-repeat top;
@@ -1214,6 +1221,9 @@ p {
   .search__input--big {
     width: 180px;
     height: 38px;
+    padding-left: 10px;
+
+    font-size: 10px;
   }
   .search__submit--big {
     width: 39px;
