@@ -3,11 +3,20 @@
   height: 400px;
   padding-top: 195px;
 
+  @media @mobile-widths {
+    padding-top: 100px;
+    background: url("../img/bg-header-mobile.jpg") no-repeat top;
+  }
+
   &__slogan {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     max-width: 610px;
+
+    @media @mobile-widths {
+      max-width: 380px;
+    }
   }
 
   &__slogan-text {
@@ -17,5 +26,10 @@
     color: #ffffff;
     background-color: #f53131;
     padding: 5px 0;
+
+    @media @mobile-widths {
+      font-size: 20px;
+      line-height: 33px;
+    }
   }
 }

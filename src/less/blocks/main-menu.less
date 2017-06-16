@@ -5,10 +5,20 @@
 
   @media @mobile-widths {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 #808080;
+    z-index: 1;
   }
 
   &__item {
-
+    @media @mobile-widths {
+      padding: 10px;
+    }
   }
 
   &__link {
@@ -21,6 +31,14 @@
     font-weight: bold;
     color: #000000;
     white-space: nowrap;
+
+    @media @tablet-widths {
+      padding: 0 10px;
+    }
+
+    @media @mobile-widths {
+      line-height: 30px;
+    }
 
     &::after {
       .pseudo-common();

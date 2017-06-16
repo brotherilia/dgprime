@@ -18,6 +18,13 @@
     font-size: 14px;
     color: #ffffff;
     background: url("../img/icon-personal.png") no-repeat 20px;
+
+    @media @mobile-widths {
+      text-indent: -5000px;
+      width: 40px;
+      padding-left: 0;
+      background-position: center;
+    }
   }
 
   &__current-location {
@@ -29,6 +36,10 @@
     font-weight: normal;
     color: #808080;
 
+    @media @mobile-widths {
+      right: 25px;
+    }
+
     &::after {
       .pseudo-common();
       transform: rotate(-45deg);
@@ -39,6 +50,35 @@
       border-bottom: 1px solid #808080;
       border-right: 1px solid #808080;
       transform: rotate(45deg);
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+
+    @media @mobile-widths {
+      display: block;
+      position: absolute;
+      top: 21px;
+      right: 60px;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(to top, #000000 0%, #000000 20%, transparent 20%, transparent 40%, #000000 40%, #000000 60%, transparent 60%, transparent 80%, #000000 80%, #000000 100%);
+    }
+  }
+
+  &__menu-toggle-checkbox {
+    display: none;
+
+    @media @mobile-widths {
+
+      &:checked ~ .main-menu {
+        display: block;
+      }
+
+      &:checked ~ .navbar__menu-toggle {
+        transform: rotate(90deg);
+      }
     }
   }
 }

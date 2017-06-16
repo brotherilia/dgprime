@@ -13,6 +13,10 @@
     display: flex;
     flex-wrap: wrap;
     padding-right: 75px;
+
+    @media @mobile-widths {
+      flex-direction: column;
+    }
   }
 
   &__expand {
@@ -24,6 +28,11 @@
     height: 60px;
     font-size: 15px;
     font-weight: normal;
+
+    @media @mobile-widths {
+      text-indent: -5000px;
+      right: 25px;
+    }
 
     &::after {
       .pseudo-common();
@@ -51,7 +60,11 @@
     @media @mobile-widths {
       display: none;
 
-      &:nth-child(-n+2) {
+      &:nth-child(-n+4) {
+        display: none;
+      }
+
+      &:first-child {
         display: block;
       }
     }
