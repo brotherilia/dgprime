@@ -1,7 +1,6 @@
 .catalog-item {
   position: relative;
   width: 283px;
-  border: 1px solid #f2f2f2;
   margin-bottom: 20px;
 
   &__sticker {
@@ -28,11 +27,13 @@
   &--brand {
     height: 125px;
     position: relative;
+    border: 1px solid #f2f2f2;
   }
 
   &__header {
     height: 213px;
-    border-bottom: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-bottom: none;
     position: relative;
 
     &--ecco {
@@ -58,6 +59,11 @@
     &--mvideo {
       background: url("../img/bg-mvideo.jpg") no-repeat top;
     }
+
+    &--goods {
+      height: 350px;
+      border: none;
+    }
   }
 
   &__logo-box {
@@ -78,16 +84,41 @@
 
   &__body {
     padding: 20px;
-    border-bottom: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-bottom: none;
+    font-weight: bold;
+    line-height: 24px;
+
+    &--goods {
+      min-height: 145px;
+    }
   }
 
   &__description {
-    line-height: 24px;
+    font-size: 16px;
+  }
+
+  &__brand {
+    font-size: 13px;
+    color: #999999;
+  }
+
+  &__price {
+    padding-top: 5px;
+  }
+
+  &__price-new {
+    color: #f53131;
+  }
+
+  &__price-old {
+    text-decoration: line-through;
   }
 
   &__footer {
     display: flex;
     height: 50px;
+    border: 1px solid #f2f2f2;
   }
 
   &__likes {

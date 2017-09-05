@@ -1,12 +1,11 @@
 .features {
-  .container-wide();
+  .container();
+  position: relative;
   padding-top: 50px;
-  border-bottom: 1px solid #ededed;
   font-weight: bold;
 
-  &__wrapper {
-    position: relative;
-    .container();
+  @media @mobile-widths {
+    padding-top: 50px;
   }
 
   &__title {
@@ -19,7 +18,7 @@
   &__wrap {
     .reset-btn();
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     width: 10px;
     height: 10px;
